@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  gateway:
+    build: ./gateway-service
+    ports:
+      - "8080:8080"
+  greeting:
+    build: ./greeting-service
+    ports:
+      - "8001:3000"
+  number:
+    build: ./number-service
+    ports:
+      - "8002:3000"
